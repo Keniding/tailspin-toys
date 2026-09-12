@@ -45,6 +45,7 @@ ALL UI components MUST use dark theme colors:
 - Prefer utility classes over custom CSS when possible
 - Use semantic grouping: layout, spacing, colors, typography
 - Keep utility combinations readable and maintainable
+- Use the repository's TypeScript formatting conventions in Astro frontmatter: single quotes, semicolons, trailing commas in multiline structures, and four-space indentation.
 
 ## Modern UI Patterns
 
@@ -52,3 +53,9 @@ ALL UI components MUST use dark theme colors:
 - Smooth transitions: `transition-all duration-200 ease-in-out`
 - Shadows for depth: `shadow-md`, `shadow-lg`, `shadow-xl`
 - Focus states for accessibility: `focus:ring-2 focus:ring-blue-500`
+
+## Comments and Documentation
+
+- Explain why a custom style, unusual utility combination, or accessibility workaround is needed.
+- Do not add comments that translate utility classes into plain language; the class names already describe the styling.
+- Update or remove comments when the associated design decision changes.
