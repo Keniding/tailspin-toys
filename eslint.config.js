@@ -27,6 +27,7 @@ export default [
         "error",
         { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
       ],
+      "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
     },
   },
 

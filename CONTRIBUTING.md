@@ -53,6 +53,7 @@ Before you can run and test the application locally, you'll need to install:
 
 - Define tables in `db/schema.ts`; generate a migration with `npm run db:generate` after schema changes
 - Use type hints for all function parameters and return values
+- Add TSDoc/JSDoc to every exported function in `db/` and `src/lib/`, including its purpose, parameters, and return value
 - Keep data-access helpers in `src/lib/` with an injectable `db` argument
 - Add or update Vitest tests for any data-layer change
 - Run tests before submitting: `npm run test:unit`
@@ -61,6 +62,8 @@ Before you can run and test the application locally, you'll need to install:
 ### Frontend (Astro)
 
 - Build UI as `.astro` pages and components; query data in frontmatter (static output)
+- Document the `Props` interface for every reusable Astro component
+- Write comments to explain intent and decisions, not to restate markup or code; update stale comments when touching related code
 - Follow the dark theme using Tailwind CSS utility classes
 - Add `data-testid` attributes to interactive elements for testing
 - Run E2E tests before submitting: `npm run test:e2e`
